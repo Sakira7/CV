@@ -1,89 +1,89 @@
 function start(){
-  var pic = document.createElement("img");
-  var name  = document.createElement("p");
-  var header = document.getElementById("header");
+    var pic = document.createElement("img");
+    var name  = document.createElement("p");
+    var header = document.getElementById("header");
 
 
 
-  pic.setAttribute("src","sara_rund.png");
-  pic.setAttribute("id","profile-pic");
+    pic.setAttribute("src","sara_rund.png");
+    pic.setAttribute("id","profile-pic");
 
-  name.setAttribute("id","name");
-  name.innerHTML="Sara Elofsson";
+    name.setAttribute("id","name");
+    name.innerHTML="Sara Elofsson";
 
-  header.appendChild(pic);
-  header.appendChild(name);
+    header.appendChild(pic);
+    header.appendChild(name);
 
-  //start animations
-  pic.style.animation="slide-in 2400ms 1s ease-in forwards";
-  name.style.animation="fade 2400ms 1s ease-in forwards";
-  header.style.animation="relax 1400ms 2800ms forwards";
+    //start animations
+    pic.style.animation="slide-in 2400ms 1s ease-in forwards";
+    name.style.animation="fade 2400ms 1s ease-in forwards";
+    header.style.animation="relax 1400ms 2800ms forwards";
 
-  //create buttons
-  var home_btn = document.createElement("input");
-  home_btn.setAttribute("type","button");
-  home_btn.setAttribute("value","Hem");
-  home_btn.setAttribute("id","home_btn");
-  home_btn.setAttribute("class","btn");
-  home_btn.setAttribute("onclick","home()");
+    //create buttons
+    var home_btn = document.createElement("input");
+    home_btn.setAttribute("type","button");
+    home_btn.setAttribute("value","Hem");
+    home_btn.setAttribute("id","home_btn");
+    home_btn.setAttribute("class","btn");
+    home_btn.setAttribute("onclick","home()");
 
-  var work_btn = document.createElement("input");
-  work_btn.setAttribute("type","button");
-  work_btn.setAttribute("value","Arbeten");
-  work_btn.setAttribute("id","work_btn");
-  work_btn.setAttribute("class","btn");
-  work_btn.setAttribute("onclick","work()");
+    var work_btn = document.createElement("input");
+    work_btn.setAttribute("type","button");
+    work_btn.setAttribute("value","Arbeten");
+    work_btn.setAttribute("id","work_btn");
+    work_btn.setAttribute("class","btn");
+    work_btn.setAttribute("onclick","work()");
 
-  var studies_btn = document.createElement("input");
-  studies_btn.setAttribute("type","button");
-  studies_btn.setAttribute("value","Studier");
-  studies_btn.setAttribute("id","studies_btn");
-  studies_btn.setAttribute("class","btn");
-  studies_btn.setAttribute("onclick","studies()");
+    var studies_btn = document.createElement("input");
+    studies_btn.setAttribute("type","button");
+    studies_btn.setAttribute("value","Studier");
+    studies_btn.setAttribute("id","studies_btn");
+    studies_btn.setAttribute("class","btn");
+    studies_btn.setAttribute("onclick","studies()");
 
-  var misc_btn = document.createElement("input");
-  misc_btn.setAttribute("type","button");
-  misc_btn.setAttribute("value","Övrigt");
-  misc_btn.setAttribute("id","misc_btn");
-  misc_btn.setAttribute("class","btn");
-  misc_btn.setAttribute("onclick","misc()");
+    var misc_btn = document.createElement("input");
+    misc_btn.setAttribute("type","button");
+    misc_btn.setAttribute("value","Övrigt");
+    misc_btn.setAttribute("id","misc_btn");
+    misc_btn.setAttribute("class","btn");
+    misc_btn.setAttribute("onclick","misc()");
 
-  var contact_btn = document.createElement("input");
-  contact_btn.setAttribute("type","button");
-  contact_btn.setAttribute("value","Kontakt");
-  contact_btn.setAttribute("id","contact_btn");
-  contact_btn.setAttribute("class","btn");
-  contact_btn.setAttribute("onclick","contact()");
+    var contact_btn = document.createElement("input");
+    contact_btn.setAttribute("type","button");
+    contact_btn.setAttribute("value","Kontakt");
+    contact_btn.setAttribute("id","contact_btn");
+    contact_btn.setAttribute("class","btn");
+    contact_btn.setAttribute("onclick","contact()");
 
-  header.appendChild(home_btn);
-  header.appendChild(work_btn);
-  header.appendChild(studies_btn);
-  header.appendChild(misc_btn);
-  header.appendChild(contact_btn);
+    header.appendChild(home_btn);
+    header.appendChild(work_btn);
+    header.appendChild(studies_btn);
+    header.appendChild(misc_btn);
+    header.appendChild(contact_btn);
 
-  //animate buttons
-  home_btn.style.animation="pop-in 600ms 3600ms forwards";
-  work_btn.style.animation="pop-in 600ms 3800ms forwards";
-  studies_btn.style.animation="pop-in 600ms 4000ms forwards";
-  misc_btn.style.animation="pop-in 600ms 4200ms forwards";
-  contact_btn.style.animation="pop-in 600ms 4400ms forwards";
+    //animate buttons
+    home_btn.style.animation="pop-in 600ms 3600ms forwards";
+    work_btn.style.animation="pop-in 600ms 3800ms forwards";
+    studies_btn.style.animation="pop-in 600ms 4000ms forwards";
+    misc_btn.style.animation="pop-in 600ms 4200ms forwards";
+    contact_btn.style.animation="pop-in 600ms 4400ms forwards";
 
 
-  var bubble = document.createElement("div");
-  bubble.setAttribute("class","bubble");
-  bubble.setAttribute("id","disc_bubble");
-  bubble.innerHTML="<div class='bubble_txt'>"+" "+"</div>";
+    var bubble = document.createElement("div");
+    bubble.setAttribute("class","bubble");
+    bubble.setAttribute("id","disc_bubble");
+    bubble.innerHTML="<div class='bubble_txt'>"+" "+"</div>";
 
-  var homeCon = document.getElementById("home_cont");
+    var homeCon = document.getElementById("home_cont");
 
-  homeCon.appendChild(bubble);
+    homeCon.appendChild(bubble);
 
-  window.setTimeout(function(){
-      $("#home_cont").fadeIn(1000);
-  },4400);
-  $("#content").css("padding","2.3vw");
-  $("#home_head").siblings().hide();
-  $("#home_btn").addClass("selected");
+    window.setTimeout(function(){
+        $("#home_cont").fadeIn(1000);
+    },4400);
+    $("#content").css("padding","2.3vw");
+    $("#home_head").siblings().hide();
+    $("#home_btn").addClass("selected");
 
 
 }
