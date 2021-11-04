@@ -1,58 +1,58 @@
-var pic = document.createElement("img");
-var name  = document.createElement("p");
-var header = document.getElementById("header");
-
-pic.setAttribute("src","sara_rund.png");
-pic.setAttribute("id","profile-pic");
-
-name.setAttribute("id","name");
-name.innerHTML="Sara Elofsson";
-
-header.appendChild(pic);
-header.appendChild(name);
-
-//create buttons
-var home_btn = document.createElement("input");
-home_btn.setAttribute("type","button");
-home_btn.setAttribute("value","Hem");
-home_btn.setAttribute("id","home_btn");
-home_btn.setAttribute("class","btn");
-home_btn.setAttribute("onclick","home()");
-
-var work_btn = document.createElement("input");
-work_btn.setAttribute("type","button");
-work_btn.setAttribute("value","Arbeten");
-work_btn.setAttribute("id","work_btn");
-work_btn.setAttribute("class","btn");
-work_btn.setAttribute("onclick","work()");
-
-var studies_btn = document.createElement("input");
-studies_btn.setAttribute("type","button");
-studies_btn.setAttribute("value","Studier");
-studies_btn.setAttribute("id","studies_btn");
-studies_btn.setAttribute("class","btn");
-studies_btn.setAttribute("onclick","studies()");
-
-var misc_btn = document.createElement("input");
-misc_btn.setAttribute("type","button");
-misc_btn.setAttribute("value","Övrigt");
-misc_btn.setAttribute("id","misc_btn");
-misc_btn.setAttribute("class","btn");
-misc_btn.setAttribute("onclick","misc()");
-
-var contact_btn = document.createElement("input");
-contact_btn.setAttribute("type","button");
-contact_btn.setAttribute("value","Kontakt");
-contact_btn.setAttribute("id","contact_btn");
-contact_btn.setAttribute("class","btn");
-contact_btn.setAttribute("onclick","contact()");
-
-header.appendChild(home_btn);
-header.appendChild(work_btn);
-header.appendChild(studies_btn);
-header.appendChild(misc_btn);
-header.appendChild(contact_btn);
 function start(){
+  var pic = document.createElement("img");
+  var name  = document.createElement("p");
+  var header = document.getElementById("header");
+
+  pic.setAttribute("src","sara_rund.png");
+  pic.setAttribute("id","profile-pic");
+
+  name.setAttribute("id","name");
+  name.innerHTML="Sara Elofsson";
+
+  header.appendChild(pic);
+  header.appendChild(name);
+
+  //create buttons
+  var home_btn = document.createElement("input");
+  home_btn.setAttribute("type","button");
+  home_btn.setAttribute("value","Hem");
+  home_btn.setAttribute("id","home_btn");
+  home_btn.setAttribute("class","btn");
+  home_btn.setAttribute("onclick","home()");
+
+  var work_btn = document.createElement("input");
+  work_btn.setAttribute("type","button");
+  work_btn.setAttribute("value","Arbeten");
+  work_btn.setAttribute("id","work_btn");
+  work_btn.setAttribute("class","btn");
+  work_btn.setAttribute("onclick","work()");
+
+  var studies_btn = document.createElement("input");
+  studies_btn.setAttribute("type","button");
+  studies_btn.setAttribute("value","Studier");
+  studies_btn.setAttribute("id","studies_btn");
+  studies_btn.setAttribute("class","btn");
+  studies_btn.setAttribute("onclick","studies()");
+
+  var misc_btn = document.createElement("input");
+  misc_btn.setAttribute("type","button");
+  misc_btn.setAttribute("value","Övrigt");
+  misc_btn.setAttribute("id","misc_btn");
+  misc_btn.setAttribute("class","btn");
+  misc_btn.setAttribute("onclick","misc()");
+
+  var contact_btn = document.createElement("input");
+  contact_btn.setAttribute("type","button");
+  contact_btn.setAttribute("value","Kontakt");
+  contact_btn.setAttribute("id","contact_btn");
+  contact_btn.setAttribute("class","btn");
+  contact_btn.setAttribute("onclick","contact()");
+
+  header.appendChild(home_btn);
+  header.appendChild(work_btn);
+  header.appendChild(studies_btn);
+  header.appendChild(misc_btn);
+  header.appendChild(contact_btn);
 
     //start animations
     pic.style.animation="slide-in 2400ms 1s ease-in forwards";
