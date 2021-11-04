@@ -1,3 +1,16 @@
+var pic = document.createElement("img");
+var name  = document.createElement("p");
+var header = document.getElementById("header");
+
+pic.setAttribute("src","sara_rund.png");
+pic.setAttribute("id","profile-pic");
+
+name.setAttribute("id","name");
+name.innerHTML="Sara Elofsson";
+
+header.appendChild(pic);
+header.appendChild(name);
+
 //create buttons
 var home_btn = document.createElement("input");
 home_btn.setAttribute("type","button");
@@ -40,19 +53,6 @@ header.appendChild(studies_btn);
 header.appendChild(misc_btn);
 header.appendChild(contact_btn);
 function start(){
-    var pic = document.createElement("img");
-    var name  = document.createElement("p");
-    var header = document.getElementById("header");
-
-
-    pic.setAttribute("src","sara_rund.png");
-    pic.setAttribute("id","profile-pic");
-
-    name.setAttribute("id","name");
-    name.innerHTML="Sara Elofsson";
-
-    header.appendChild(pic);
-    header.appendChild(name);
 
     //start animations
     pic.style.animation="slide-in 2400ms 1s ease-in forwards";
